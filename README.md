@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HotelMS - ASP.NET Web Forms (.NET Framework)
 
 This is a C# **ASP.NET Web Application (.NET Framework)** port of the original
@@ -52,3 +53,6 @@ HotelMS/
   `TaxRatePercent` app setting in `Web.config` (defaults to 12%).
 - No external NuGet packages are required - everything uses the built-in
   `System.Data.SqlClient` and Web Forms server controls.
+=======
+# Hotel-Management-System---Web-Application
+>>>>>>> a2712bed82dc2b346945df3da82e60f5289ae844
