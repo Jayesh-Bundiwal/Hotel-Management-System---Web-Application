@@ -1,0 +1,28 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="HotelMS.SiteMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server">Hotel Management System</asp:ContentPlaceHolder></title>
+    <link rel="stylesheet" href="~/Content/Site.css" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="top-nav">
+            <div class="brand">Hotel<span>MS</span></div>
+            <asp:Panel ID="pnlNav" runat="server" CssClass="nav-links" Visible="false" style="display:flex;align-items:center;">
+                <span class="nav-user">Signed in as <asp:Literal ID="litUserName" runat="server" /></span>
+                <a href="~/Dashboard.aspx" runat="server">Dashboard</a>
+                <a href="~/RoomPricing.aspx" runat="server">Room Pricing</a>
+                <a href="~/BookingList.aspx" runat="server">Bookings &amp; Billing</a>
+                <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+            </asp:Panel>
+        </div>
+        <div class="page-wrap">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
